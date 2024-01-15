@@ -1,0 +1,112 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    padding: 20px;
+    width: 40%;
+    align-items: center;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+}
+
+.text {
+    color: brown;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.underline {
+    width: 110px;
+    height: 3px;
+    background-color: brown;
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px auto 20px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 45px;
+    color: white;
+    background-color: brown;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+@media (max-width: 565px) {
+    input {
+        width: 270px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    .submit-container {
+        gap: 15px;
+        margin: 20px auto 10px;
+    }
+    .submit {
+        width: 130px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+}
+
+.gray {
+    background-color: #EAEAEA;
+    color: #676767;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.login-modal {
+    width: 40%;
+    margin: 15% auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid brown;
+    background-color: white;
+}
+
+.login-modal button {
+    margin-top: 20px;
+    padding: 6px 15px;
+    background-color: brown;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}

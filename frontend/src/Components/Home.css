@@ -1,0 +1,300 @@
+@import url("Header.css");
+@import url("Footer.css");
+@import url("ModalForm.css");
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.works {
+    margin: 2.8rem 0;
+}
+
+.work {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 4px fade(#000, 25%);
+    transition: box-shadow 0.2s linear;
+    height: auto;
+}
+
+.work:hover {
+    box-shadow: 0 0 25px fade(#000, 25%);
+}
+
+@media (max-width: 767px) {
+    .work {
+        max-width: 370px;
+    }
+}
+
+@media (max-width: 565px) {
+    .work {
+        margin: 0 auto;
+    }
+}
+
+.work__image {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 40px;
+    height: auto;
+}
+
+.work__content {
+    padding-bottom: 1rem;
+}
+
+.works__header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.works__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.work__link {
+    padding-top: 10px;
+    color: #2B2A2C;
+    padding-bottom: 30px;
+}
+
+.work__description {
+    padding: 20px 0 10px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 15px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem 2.8rem;
+    justify-content: center;
+}
+
+.portfolio__col {
+    flex-basis: 30%;
+    padding: 1rem;
+    margin: 10px 1.666%;
+    background-color: rgb(249, 244, 237);
+    position: relative;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .portfolio__col {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 565px) {
+    .portfolio__col {
+        flex-basis: 100%;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.5em 1em;
+    min-width: 80px;
+    border: 1px solid #6A696B;
+    border-radius: 1.5em;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .8rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #2B2A2C;
+    box-shadow: 2px 2px 10px fade(#000, 24%);
+    color: #fff;
+    border-color: #2B2A2C;
+}
+
+.btn+.btn {
+    margin-left: 1rem;
+}
+
+.btn--sm {
+    padding: 0.7em 1.2em;
+    min-width: 0;
+    font-size: 0.94rem;
+    font-weight: 700;
+    border-width: 2px;
+}
+
+.btn--thin {
+    min-width: 145px;
+    font-size: 0.8rem;
+}
+
+.btn-add {
+    height: 30px;
+    margin-top: 5px;
+}
+
+.btn-edit {
+    margin-right: 20px;
+}
+
+.form__comments {
+    display: flex;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.form__comments .btn {
+    height: 35px;
+    width: 130px;
+    position: absolute;
+    bottom: -13px;
+    left: 30px;
+}
+
+.form__comments textarea {
+    height: 100px;
+    margin-top: 20px;
+}
+
+.form__comments input {
+    width: 100%;
+}
+
+.form__comments p {
+    text-align: justify;
+    padding: 0 0 35px 25px;
+    width: 50%;
+    color: #2B2A2C;
+    position: relative;
+}
+
+.comments {
+    margin: 20px auto 40px;
+    width: 90%;
+}
+
+.comments__title {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.comments span {
+    font-weight: 700;
+}
+
+.comment {
+    display: flex;
+    position: relative;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    background-color: rgb(249, 244, 237);
+}
+
+.comment p {
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.inputs__comments {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}

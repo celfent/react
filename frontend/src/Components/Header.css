@@ -1,0 +1,158 @@
+.header {
+    padding: 1.2rem 0;
+    position: relative;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+.header__title {
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+}
+
+.user__avatar {
+    width: 72px;
+    height: 72px;
+}
+
+.user__avatar img {
+    border-radius: 50%;
+    width: 72px;
+    height: auto;
+}
+
+.user__content {
+    padding-left: 9px;
+    padding-top: 15px;
+}
+
+.user__name {
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #2B2A2C;
+    font-weight: 700;
+    width: auto;
+}
+
+.user__prof {
+    color: fade(#2B2A2C, 70%);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__link {
+    margin-left: 2rem;
+    position: relative;
+    font-size: 0.93rem;
+    color: #2B2A2C;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav__link:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #2B2A2C;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+    transition: width 0.2s linear;
+}
+
+.nav__link:hover:not(.nav__link--btn):after {
+    width: 100%;
+}
+
+.nav__link--btn {
+    padding: 0.66rem 2rem;
+    border: 2px solid #2B2A2C;
+    border-radius: 20px;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    cursor: pointer;
+    background-color: white;
+}
+
+.nav__link--btn:hover {
+    background-color: #2B2A2C;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .user__avatar {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .user__avatar img {
+        width: 65px;
+    }
+    
+    .user__content {
+        padding-left: 3px;
+        padding-top: 12px;
+    }
+    
+    .user__name {
+        font-size: 1.1rem;
+    }
+
+    .nav__link {
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__title {
+        font-size: 0.9rem;
+    }
+    .nav__link {
+        margin-left: 0.5rem;
+        padding: 0.7em;
+    }
+}
+
+@media (max-width: 565px) {
+    .header__title {
+        font-size: 0.6rem;
+    }
+
+    .user__avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .user__avatar img {
+        width: 50px;
+    }
+    
+    .user__content {
+        padding-top: 10px;
+    }
+    
+    .user__name, .user__prof {
+        font-size: 0.8rem;
+    }
+
+    .nav__link {
+        font-size: 0.6rem;
+    }
+}
